@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Signup</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body
+    style="
+      background-image: url(https://images.unsplash.com/photo-1544006659-f0b21884ce1d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    "
+  >
+    <div class="d-flex mx-auto align-items-center bg-[#01468e]">
+      <img
+        class="h-16 mx-auto bg-light"
+        src="https://cdn.freelogovectors.net/wp-content/uploads/2020/09/federal-bank-logo.png"
+        alt=""
+        style="height: 60px"
+      />
+      <p
+        onclick="homepage()"
+        class="text-light font-bold mx-auto my-auto cursor-pointer hover:border-b-[3px] hover:border-yellow-400"
+      >
+        Home
+      </p>
+      <p
+        class="text-light font-bold mx-auto my-auto cursor-pointer hover:border-b-[3px] hover:border-yellow-400"
+      >
+        Personal
+      </p>
+      <p
+        class="text-light font-bold mx-auto my-auto cursor-pointer hover:border-b-[3px] hover:border-yellow-400"
+      >
+        NRI
+      </p>
+      <p
+        class="text-light font-bold mx-auto my-auto cursor-pointer hover:border-b-[3px] hover:border-yellow-400"
+      >
+        Business
+      </p>
+      <button
+        onclick="loginfrm()"
+        class="btn btn-warning mx-auto my-auto font-bold"
+      >
+        Login
+      </button>
+    </div>
+    <section>
+      <div class="row my-[7rem]">
+        <div
+          class="col-3 mx-5 d-flex flex-column justify-content-center bg-white/20 backdrop-blur-lg rounded-3xl shadow-lg p-5"
+        >
+          <h2 class="text-center fs-3 fw-bold my-3 text-white">Signup</h2>
+          <div
+            class="d-flex flex-column justify-content-center align-items-center"
+          >
+            <input
+              class="form-control w-75"
+              type="text"
+              id="uname"
+              placeholder="User Name"
+              required
+            /><br />
+            <input
+              class="form-control w-75"
+              type="email"
+              id="email"
+              placeholder="Email"
+              required
+            /><br />
+            <input
+              class="form-control w-75"
+              type="password"
+              id="password"
+              placeholder="Password"
+              required
+            /><br />
+            <input
+              class="form-control w-75"
+              type="text"
+              id="acno"
+              placeholder="Account Number"
+              required
+            /><br />
+          </div>
+
+          <div class="text-center">
+            <button
+              class="btn bg-blue-800 text-light fw-bold w-50 hover:bg-blue-900 hover:text-white"
+              onclick="signup()"
+            >
+              Sign Up
+            </button>
+            <p class="text my-2">
+              Already have an account?
+              <a class="text-primary" href="./login.html">Login</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-8">
+          <p class="text-right text-white fw-semibold text-[5rem]">
+            <span class="bg-white/10 backdrop-blur-lg"
+              >Discover the next level</span
+            >
+          </p>
+          <p class="text-right text-white fw-semibold text-[5rem]">
+            <span class="bg-white/10 backdrop-blur-lg">in Netbanking</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function homepage() {
+        window.location.href = "./index.html";
+      }
+      function loginfrm() {
+        window.location.href = "./login.html";
+      }
+      function signup() {
+        const uname = document.getElementById("uname").value;
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+        const acno = document.getElementById("acno").value;
+
+        if (uname && email && password && acno) {
+          const balance = Math.floor(Math.random() * 10000);
+          const user = { uname, email, password, acno, balance };
+          localStorage.setItem(email, JSON.stringify(user));
+          alert("Signup successful! Please login.");
+          window.location.href = "./login.html";
+        } else {
+          alert("All fields are required.");
+        }
+      }
+    </script>
+  </body>
+</html>

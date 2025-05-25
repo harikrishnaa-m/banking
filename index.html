@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body> 
+    <div class="d-flex mx-auto  align-items-center bg-[#01468e]" >
+        <img class="h-16 mx-auto bg-light" src="https://cdn.freelogovectors.net/wp-content/uploads/2020/09/federal-bank-logo.png"  alt="" style="height: 60px;">
+        <p onclick="homepage()" class="text-light font-bold mx-auto my-auto cursor-pointer hover:border-b-[3px] hover:border-yellow-400">Home</p>
+<p class="text-light font-bold mx-auto my-auto cursor-pointer hover:border-b-[3px] hover:border-yellow-400">Personal</p>
+<p class="text-light font-bold mx-auto my-auto cursor-pointer hover:border-b-[3px] hover:border-yellow-400">NRI</p>
+<p class="text-light font-bold mx-auto my-auto cursor-pointer hover:border-b-[3px] hover:border-yellow-400">Business</p>
+<button onclick="loginfrm()" class="btn btn-warning mx-auto my-auto font-bold">Login</button>
+
+    </div>
+    <!-- carosel -->
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8"> <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img  src="https://www.federalbank.co.in/documents/10180/0/Summery+Offers.webp/3c7cf5d4-feaf-96c8-0579-9d4941cebb5f?t=1745066136080" class="d-block w-100 h-[600px]" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img height="600px" src="https://www.federalbank.co.in/documents/10180/649609938/Federal-Bank_Web-banner-1180-x-600.webp/063c13ee-2489-8d25-2791-8c5f4a529dba?t=1741160765681" class="d-block w-100 h-[600px]" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img height="600px" src="https://www.federalbank.co.in/documents/10180/26262230/FBL-POS-MACHINE-%26-SOUND-BOX_Web-Banners_New_2400x940px.webp/3ba37cb7-a598-92cb-39cc-bfac2ad2f437?t=1743688839813" class="d-block w-100 h-[600px]" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div></div>
+        <div class="col-2"></div>
+    </div>
+   
+      <section>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 border border-radius-lg my-5 rounded-full p-3 shadow-lg">
+                <div class="d-flex "><div class="d-flex mx-auto flex-column align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-12 text-blue-500">
+                        <path d="M7.25 11.5a.75.75 0 0 0 0 1.5h1.5a.75.75 0 0 0 0-1.5h-1.5Z" />
+                        <path fill-rule="evenodd" d="M6 1a2.5 2.5 0 0 0-2.5 2.5v9A2.5 2.5 0 0 0 6 15h4a2.5 2.5 0 0 0 2.5-2.5v-9A2.5 2.5 0 0 0 10 1H6Zm4 1.5h-.5V3a.5.5 0 0 1-.5.5H7a.5.5 0 0 1-.5-.5v-.5H6a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-9a1 1 0 0 0-1-1Z" clip-rule="evenodd" />
+                      </svg>
+                      <p class="text fw-bold">Do it Yourself</p>
+                </div>
+                <div class="d-flex mx-auto flex-column align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-12 text-blue-500">
+                        <path d="M2.5 3A1.5 1.5 0 0 0 1 4.5V5h14v-.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
+                        <path fill-rule="evenodd" d="M15 7H1v4.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V7ZM3 10.25a.75.75 0 0 1 .75-.75h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1-.75-.75Zm3.75-.75a.75.75 0 0 0 0 1.5h2.5a.75.75 0 0 0 0-1.5h-2.5Z" clip-rule="evenodd" />
+                      </svg>
+                      
+                      <p class="text fw-bold">Pay</p>
+                </div>
+                
+                <div class="d-flex mx-auto flex-column align-items-center">
+                    
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-12 text-blue-500">
+                        <path fill-rule="evenodd" d="M11 4V3a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v1H4a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1ZM9 2.5H7a.5.5 0 0 0-.5.5v1h3V3a.5.5 0 0 0-.5-.5ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z" clip-rule="evenodd" />
+                        <path d="M3 11.83V12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-.17c-.313.11-.65.17-1 .17H4c-.35 0-.687-.06-1-.17Z" />
+                      </svg>
+                      
+                      <p class="text fw-bold">Invest</p>
+                </div>
+                <div class="d-flex mx-auto flex-column align-items-center">
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-12 text-blue-500">
+                        <path fill-rule="evenodd" d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM4.75 4a.75.75 0 0 0 0 1.5H6.5c.698 0 1.3.409 1.582 1H4.75a.75.75 0 0 0 0 1.5h3.332C7.8 8.591 7.198 9 6.5 9H4.75a.75.75 0 0 0-.53 1.28l2.5 2.5a.75.75 0 0 0 1.06-1.06L6.56 10.5A3.251 3.251 0 0 0 9.663 8h1.587a.75.75 0 0 0 0-1.5H9.663a3.232 3.232 0 0 0-.424-1h2.011a.75.75 0 0 0 0-1.5h-6.5Z" clip-rule="evenodd" />
+                      </svg>
+                      
+                          
+                          <p class="text fw-bold">Borrow</p>
+                    </div>
+                    <div class="d-flex mx-auto flex-column align-items-center">
+                    
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-12 text-blue-500">
+                            <path d="M4.5 7c.681 0 1.3-.273 1.75-.715C6.7 6.727 7.319 7 8 7s1.3-.273 1.75-.715A2.5 2.5 0 1 0 11.5 2h-7a2.5 2.5 0 0 0 0 5ZM6.25 8.097A3.986 3.986 0 0 1 4.5 8.5c-.53 0-1.037-.103-1.5-.29v4.29h-.25a.75.75 0 0 0 0 1.5h.5a.754.754 0 0 0 .138-.013A.5.5 0 0 0 3.5 14H6a.5.5 0 0 0 .5-.5v-3A.5.5 0 0 1 7 10h2a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h2.5a.5.5 0 0 0 .112-.013c.045.009.09.013.138.013h.5a.75.75 0 1 0 0-1.5H13V8.21c-.463.187-.97.29-1.5.29a3.986 3.986 0 0 1-1.75-.403A3.986 3.986 0 0 1 8 8.5a3.986 3.986 0 0 1-1.75-.403Z" />
+                          </svg>
+                          
+                          
+                              
+                              <p class="text fw-bold">Shop</p>
+                        </div>
+            </div>
+                
+                
+            </div>
+            <div class="col-2"></div>
+        </div>
+      </section>
+      <section>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="d-flex height-[100px] ">
+                    <div class="p-2 mx-5" >
+                        <img class="" src="https://www.federalbank.co.in/documents/10180/85523964/Web+banner+credit+card+final-01-01.webp/e8058c16-a040-7412-9929-628326b2abe8?t=1739416767970" alt="" style="height: 250px;width:3000px">
+                    </div>
+                    <div class="shadow-lg rounded-3xl p-3">
+                        <h1 class="text-center fw-bold text-blue-800 mb-3">Updates and Announcements</h2>
+                        <marquee  behavior="" direction="up" style="overflow: none;height:180px">
+                            <p class="mb-3 mx-3 border-bottom border-warning">As part of a scheduled maintenance activity, few of our services will be interrupted on Saturday, 24th May 2025 between 02:00 A.M. (IST) and 06:00 A.M. (IST). To know the list of affected services, click here. We regret the inconvenience this may cause. We appreciate your understanding and cooperation as we strive to improve the user experience, which remains our top priority, always.</p>
+                            <p class="mb-3 mx-3 border-bottom border-warning">FedNet limit profiles will upgrade effective 15/10/24. Your category (SilverNet/GoldNet/PlatinumNet) will auto-upgrade as per revised profiles. Click here for more details.</p>
+                            <p class="mb-3 mx-3 border-bottom border-warning">Education Loan Interest Subsidy under Padho Pardesh scheme has been discontinued w.e.f 01.04.2022 until further notice.</p>
+                            <p class="mb-3 mx-3 border-bottom border-warning">Debit Card EMI facility has been discontinued w.e.f 05.09.2022.</p>
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+      </section>
+      <section>
+        <div class="row my-5">
+            <div class="col-2"></div>
+            <div class="col-8 p-3">
+                <div class="d-flex">
+                    <div class="d-flex align-items-center mx-auto">
+                        <div>
+                            <i class="fa-solid mr-3 fa-people-arrows fa-4x" style="color: #faa61a;"></i>
+                        </div>
+                        <div>
+                            <p class="text text-l fw-bold fs-2 " style="color: #faa61a;">19,010,669</p>
+                            <p class="text fs-5 text-blue-800">Happy Customers</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mx-auto">
+                        <div>
+                            <i class="fa-solid fa-building-columns fa-4x mr-3" style="color: #faa61a;"></i>
+                        </div>
+                        <div>
+                            <p class="text text-l fw-bold fs-2 " style="color: #faa61a;">1589</p>
+                            <p class="text fs-5 text-blue-800">Banking Outlets</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mx-auto ">
+                        <div>
+                            <i class="fa-solid fa-money-bills fa-4x mr-3" style="color: #faa61a;"></i>
+                        </div>
+                        <div>
+                            <p class="text text-l fw-bold fs-2 " style="color: #faa61a;">1457</p>
+                            <p class="text fs-5 text-blue-800">ATMs</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mx-auto mr-3">
+                        <div>
+                            <i class="fa-solid fa-recycle fa-4x mr-3" style="color: #faa61a;"></i>
+                        </div>
+                        <div>
+                            <p class="text text-l fw-bold fs-2 " style="color: #faa61a;">623</p>
+                            <p class="text fs-5 text-blue-800">Cash recyclers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="d-flex border p-4 rounded-full shadow-lg">
+                    <div class="d-flex flex-column m-auto "><i class="fa-solid fa-calculator fa-3x text-blue-500 m-auto"></i>
+                    <p class="text m-auto text-blue-800 fw-bold">Banking Tools</p></div>
+                    <div class="d-flex flex-column m-auto">
+                        <i class="fa-solid fa-percent fa-3x text-blue-500 m-auto"></i>
+                    <p class="text m-auto text-blue-800 fw-bold">Rates & Charges</p>
+                    </div>
+                    <div class="d-flex flex-column m-auto"><i class="fa-solid fa-headphones fa-3x text-blue-500 m-auto"></i>
+                        <p class="text m-auto text-blue-800 fw-bold">Need Assistance</p></div>
+                    <div class="d-flex flex-column m-auto"><i class="fa-solid fa-link fa-3x text-blue-500 m-auto"></i>
+                        <p class="text m-auto text-blue-800 fw-bold">Quick Links</p></div>
+                </div>            
+            </div>
+            <div class="col-2"></div>
+        </div>
+      </section>
+      <section class="bg-[#01468e] mt-5 py-5">
+        <!-- <div class="d-flex w-75">
+            <div class="w-50">
+                <img src="https://www.federalbank.co.in/documents/10180/93641/DICGC+BANNER+-+edited%28no+text%29-01.jpg/fe61aaf3-7fc0-ad2a-11d5-f92a0e951871?t=1695975665535" alt="">
+            </div>
+            <div class="d-flex flex-column w-50 ">
+                <p class="text text-center text-blue-800 m-auto">
+                Federal Bank is registered with Deposit Insurance and Credit Guarantee Corporation (DICGC).
+                www.dicgc.org.in </p>
+                <button class="btn btn-warning m-auto">Learn More</button>
+            </div>
+        </div> -->
+        <div class="row">
+           <div class="col-2"></div>
+           <div class="col-8">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators ">
+                  <button style="background-color: rgb(255, 153, 0)" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1"></button>
+                  <button style="background-color: rgb(255, 153, 0)" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button style="background-color: rgb(255, 153, 0)" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="d-flex justify-content-center rounded-lg m-3 bg-neutral-50">
+                        <div class="w-50 ">
+                            <img class="h-[320px] w-[600px] rounded-tl-md rounded-bl-md" src="https://www.federalbank.co.in/documents/10180/93641/DICGC+BANNER+-+edited%28no+text%29-01.jpg/fe61aaf3-7fc0-ad2a-11d5-f92a0e951871?t=1695975665535" alt="">
+                        </div>
+                        <div class="d-flex flex-column w-50 justify-content-center align-items-center  ">
+                            <p class="text fs-5 text-left fw-semibold text-blue-800  ">
+                            Federal Bank is registered with Deposit Insurance and Credit Guarantee Corporation (DICGC).
+                            www.dicgc.org.in </p>
+                            <button class="btn btn-warning mt-5">Learn More</button>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-flex justify-content-center rounded-lg m-3 bg-neutral-50">
+                        <div class="w-50 ">
+                            <img class="h-[320px] w-[600px]  rounded-tl-md rounded-bl-md" src="https://www.federalbank.co.in/documents/10180/26262230/Webbanner+RBI-IOS_2401-x-1429+%281%29.webp/3168670d-41f5-b952-f3ea-3a9ef105f9e4?t=1720171671562" alt="">
+                        </div>
+                        <div class="d-flex flex-column w-50 justify-content-center align-items-center  ">
+                            <p class="text fs-5 text-left fw-semibold text-blue-800 ">
+                                Single window for resolution of complaints against RBI regulated entities. </p>
+                            <button class="btn btn-warning mt-5">Learn More</button>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-flex justify-content-center rounded-lg m-3 bg-neutral-50">
+                        <div class="w-50 ">
+                            <img class="h-[320px] w-[600px]  rounded-tl-md rounded-bl-md" src="https://www.federalbank.co.in/documents/10180/0/Open-an-NR-account-online.webp/f7693772-d85e-bc39-4809-c780fed2281b?t=1720261292645" alt="">
+                        </div>
+                        <div class="d-flex flex-column w-50 justify-content-center align-items-center  ">
+                            <p class="text fs-5 text-left fw-semibold text-blue-800 ">
+                                Open an NR Account online </p>
+                            <button class="btn btn-warning mt-5">Learn More</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev d-none" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next d-none" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+           </div>
+           <div class="col-2"></div>
+        </div>
+      </section>
+      <section class="m-5">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <h2 class="text-center fs-2 fw-bold my-5">Unlearn, Learn & Relearn</h2>
+                <div class="d-flex justify-content-between ">
+                    <div class="mx-auto w-[300px] border rounded shadow-lg p-3 cursor-pointer transition-transform duration-300 transform hover:[transform:translate3d(0,-10px,0)]" >
+                        <img class="w-[300px] h-[150px] rounded my-auto "  src="https://www.federalbank.co.in/documents/10180/0/SHRENI-4.jpg/1af478af-9a15-a519-6b5f-2bea19fdd4aa?t=1710308154436" alt="">
+                        <p class="text-left fw-bold my-3 fs-5">Savings Account : Assured Solution</p>
+                    </div>
+                    <div class="mx-auto w-[300px] border rounded shadow-lg p-3 cursor-pointer transition-transform duration-300 transform hover:[transform:translate3d(0,-10px,0)]">
+                        <img class="w-[300px] h-[150px] rounded my-auto "   src="https://www.federalbank.co.in/documents/10180/0/shutterstock_2238877333_450x236+%281%29.jpg/98de097e-5f4c-997a-8bb0-f96f03420738?t=1732707928218" alt="">
+                        <p class="text-left fw-bold my-3 fs-5">Flexible Retirement Savings Plan : NPS</p>
+                    </div>
+                    <div class="mx-auto w-[300px] border rounded shadow-lg p-3 cursor-pointer transition-transform duration-300 transform hover:[transform:translate3d(0,-10px,0)]">
+                        <img class="w-[300px] h-[150px] rounded my-auto" src="https://www.federalbank.co.in/documents/10180/85519258/Visa+Imperio.jpg/b9feadba-d542-9955-4626-ebb48b592f25?t=1644865488452" alt="">
+                        <p class="text-left fw-bold my-3 fs-5">Understanding Credit Card Loans</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between my-5 ">
+                    <div class="mx-auto w-[300px] border rounded shadow-lg p-3 cursor-pointer transition-transform duration-300 transform hover:[transform:translate3d(0,-10px,0)]" >
+                        <img class="w-[300px] h-[150px] rounded my-auto "  src="https://www.federalbank.co.in/documents/10180/85519258/ThumbCarLoan.png/984b1bb1-dc8e-fff4-4c3c-0a71f79edfda?t=1665832960449" alt="">
+                        <p class="text-left fw-bold my-3 fs-5">Understanding common Car Loan scams</p>
+                    </div>
+                    <div class="mx-auto w-[300px] border rounded shadow-lg p-3 cursor-pointer transition-transform duration-300 transform hover:[transform:translate3d(0,-10px,0)]">
+                        <img class="w-[300px] h-[150px] rounded my-auto "   src="https://www.federalbank.co.in/documents/10180/85519258/ThumbOtherLoans.png/c8b930d2-0570-9f28-4021-165946521e8c?t=1665833833207" alt="">
+                        <p class="text-left fw-bold my-3 fs-5">How to analyse Mutual Fund performance?</p>
+                    </div>
+                    <div class="mx-auto w-[300px] border rounded shadow-lg p-3 cursor-pointer transition-transform duration-300 transform hover:[transform:translate3d(0,-10px,0)]">
+                        <img class="w-[300px] h-[150px] rounded my-auto" src="https://www.federalbank.co.in/documents/10180/85584336/Thumb-Bespoke.png/f085f6a7-79c5-9551-3f71-665146275f7f?t=1645602841585" alt="">
+                        <p class="text-left fw-bold my-3 fs-5">e-Banking: The key to digital finance
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+      </section>
+      <footer class="bg-[#01468e] text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Bank Logo and Description -->
+                <div class="flex flex-col items-center md:items-start">
+                    <img src="https://cdn.freelogovectors.net/wp-content/uploads/2020/09/federal-bank-logo.png" alt="Federal Bank Logo" class="h-16 mb-4">
+                    <p class="text-sm text-left md:text-left">Federal Bank - Your trusted banking partner, offering a wide range of financial services for personal, NRI, and business banking.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-yellow-400">Home</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Personal Banking</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">NRI Services</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Business Banking</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <p class="text-sm">Federal Bank Ltd.</p>
+                    <p class="text-sm">Aluva, Kerala, India</p>
+                    <p class="text-sm">Phone: 1800-425-1199</p>
+                    <p class="text-sm">Email: support@federalbank.co.in</p>
+                </div>
+
+                <!-- Download Apps and Social Media -->
+                <div class="flex flex-col items-center md:items-start">
+                    <h3 class="text-lg font-bold mb-4">Download Our App</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="https://play.google.com/store" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play Store" class="h-10">
+                        </a>
+                        <a href="https://www.apple.com/app-store/" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store" class="h-10">
+                        </a>
+                    </div>
+                    <h3 class="text-lg font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-yellow-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-yellow-400"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-yellow-400"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="hover:text-yellow-400"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="mt-8 pt-8 border-t border-white/20 text-center text-sm">
+                <p>&copy; 2025 Federal Bank. All rights reserved.</p>
+                <p class="mt-2">
+                    <a href="#" class="hover:text-yellow-400">Privacy Policy</a> | 
+                    <a href="#" class="hover:text-yellow-400">Terms & Conditions</a> | 
+                    <a href="#" class="hover:text-yellow-400">Sitemap</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function homepage(){
+            
+            window.location.href = "./index.html"
+        }
+        function loginfrm(){
+            window.location.href ="./login.html"
+        }
+    </script>
+</body>
+</html>

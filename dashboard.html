@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="d-flex mx-auto align-items-center bg-[#01468e]">
+      <img
+        class="h-16 mx-auto bg-light"
+        src="https://cdn.freelogovectors.net/wp-content/uploads/2020/09/federal-bank-logo.png"
+        alt=""
+        style="height: 60px"
+      />
+      <p
+        onclick="homepage()"
+        class="text-light font-bold mx-auto my-auto cursor-pointer hover:border-b-[3px] hover:border-yellow-400"
+      >
+        Home
+      </p>
+      <p
+        class="text-light font-bold mx-auto my-auto cursor-pointer hover:border-b-[3px] hover:border-yellow-400"
+      >
+        Personal
+      </p>
+      <p
+        class="text-light font-bold mx-auto my-auto cursor-pointer hover:border-b-[3px] hover:border-yellow-400"
+      >
+        NRI
+      </p>
+      <p
+        class="text-light font-bold mx-auto my-auto cursor-pointer hover:border-b-[3px] hover:border-yellow-400"
+      >
+        Business
+      </p>
+      <button
+        onclick="logout()"
+        class="btn btn-warning mx-auto my-auto font-bold"
+      >
+        Logout
+      </button>
+    </div>
+    <section class="d-flex">
+      <div class="dflex h-[100vh] w-[15vw] border flex-column pt-2 px-2">
+        <input class="form-control" type="text" placeholder="Search" />
+        <p
+          class="text text-neutral-50 cursor-pointer bg-neutral-400 fs-5 pl-1 fw-bold my-3"
+        >
+          <i class="fa-solid fa-house" style="color: #ffffff"></i> HOME
+        </p>
+        <p class="text text-neutral-400 cursor-pointer fs-5 pl-1 fw-bold my-3">
+          <i class="fa-solid fa-credit-card" style="color: #93969a"></i> CREDIT
+          CARDS
+        </p>
+        <p class="text text-neutral-400 cursor-pointer fs-5 pl-1 fw-bold my-3">
+          <i class="fa-solid fa-money-check-dollar" style="color: #93969a"></i>
+          ACCOUNTS
+        </p>
+        <p class="text text-neutral-400 cursor-pointer fs-5 pl-1 fw-bold my-3">
+          <i
+            class="fa-solid fa-arrow-right-arrow-left"
+            style="color: #93969a"
+          ></i>
+          TRANSFER FUNDS
+        </p>
+        <p class="text text-neutral-400 cursor-pointer fs-5 pl-1 fw-bold my-3">
+          <i class="fa-solid fa-users" style="color: #93969a"></i> BENEFICIARIES
+        </p>
+        <p class="text text-neutral-400 cursor-pointer fs-5 pl-1 fw-bold my-3">
+          <i class="fa-solid fa-circle-plus" style="color: #93969a"></i>
+          ADD-ON-SERVICES
+        </p>
+        <p class="text text-neutral-400 cursor-pointer fs-5 pl-1 fw-bold my-3">
+          <i class="fa-solid fa-receipt" style="color: #93969a"></i> BILL
+          PAYMENTS
+        </p>
+        <p class="text text-neutral-400 cursor-pointer fs-5 pl-1 fw-bold my-3">
+          <i class="fa-solid fa-file-invoice-dollar" style="color: #93969a"></i>
+          MANAGE TAX
+        </p>
+        <p class="text text-neutral-400 cursor-pointer fs-5 pl-1 fw-bold my-3">
+          <i class="fa-solid fa-headset" style="color: #93969a"></i> CUSTOMER
+          SERVICE
+        </p>
+        <p class="text text-neutral-400 cursor-pointer fs-5 pl-1 fw-bold my-3">
+          <i class="fa-solid fa-user-circle" style="color: #93969a"></i> PROFILE
+        </p>
+      </div>
+      <div
+        style="background-color: #f2f2f2"
+        class="d-flex flex-column h-[70vh] w-[18vw] ] border rounded-lg mx-auto mt-[5rem]"
+      >
+        <h1
+          class="text rounded-tl-lg rounded-tr-lg text-center fs-4 fw-bold text-yellow-500 py-3 px-2"
+          style="background-color: #01468e"
+        >
+          ACCOUNT SUMMARY
+        </h1>
+        <!-- <i class="fa-solid fa-user fa-10x mt-2 mx-auto" style="color: #ffbb00;"></i> -->
+        <img
+          class="h-[180px] w-[200px] mx-auto"
+          src="https://img.freepik.com/premium-vector/user-icons-includes-user-icons-people-icons-symbols-premiumquality-graphic-design-elements_981536-526.jpg"
+          alt=""
+        />
+        <p id="acno" class="text-center my-auto fw-semibold">ACCOUNT NO :</p>
+        <p id="uname" class="text-center my-auto fw-semibold">USER NAME :</p>
+        <p id="mail" class="text-center my-auto fw-semibold">
+          E-MAIL : hariasok66@gmail.com
+          <button onclick="edit()" class="btn-primary">
+            <i class="fa-solid fa-pen fa-sm" style="color: #0062ff"></i>
+          </button>
+        </p>
+        <p id="acbal" class="text-center my-auto fw-bold">
+          ACCOUNT BALANCE : <span class="text text-success">10000</span>
+        </p>
+      </div>
+      <div
+        style="background-color: #f2f2f2"
+        class="d-flex flex-column h-[70vh] w-[18vw] ] border rounded-lg mx-auto mt-[5rem]"
+      >
+        <h1
+          class="text rounded-tl-lg rounded-tr-lg text-center fs-4 fw-bold text-yellow-500 py-3 px-2"
+          style="background-color: #01468e"
+        >
+          DEPOSIT
+        </h1>
+        <!-- <i class="fa-solid fa-user fa-10x mt-2 mx-auto" style="color: #ffbb00;"></i> -->
+        <i
+          class="fa-solid fa-sack-dollar fa-10x mx-auto mt-2"
+          style="color: #5c5c5c"
+        ></i>
+        <input
+          id="depamount"
+          class="form-control w-75 mx-auto mt-3"
+          placeholder="Enter the amount"
+          type="text"
+        />
+        <input
+          id="deppwd"
+          class="form-control w-75 mx-auto mt-2"
+          type="password"
+          placeholder="Enter password"
+        />
+        <button
+          onclick="deposit()"
+          style="background-color: #ffd900"
+          class="btn w-50 mx-auto mt-3 fw-bold"
+        >
+          Deposit
+        </button>
+        <div id="depresult" class="text mx-auto my-auto fw-bold"></div>
+      </div>
+      <div
+        style="background-color: #f2f2f2"
+        class="d-flex flex-column h-[70vh] w-[18vw] ] border rounded-lg mx-auto mt-[5rem]"
+      >
+        <h1
+          class="text rounded-tl-lg rounded-tr-lg text-center fs-4 fw-bold text-yellow-500 py-3 px-2"
+          style="background-color: #01468e"
+        >
+          WITHDRAW
+        </h1>
+        <!-- <i class="fa-solid fa-user fa-10x mt-2 mx-auto" style="color: #ffbb00;"></i> -->
+        <i
+          class="fa-solid fa-money-bill-transfer fa-10x mx-auto mt-2"
+          style="color: #5c5c5c"
+        ></i>
+        <input
+          id="widamount"
+          class="form-control w-75 mx-auto mt-3"
+          placeholder="Enter the amount"
+          type="text"
+        />
+        <input
+          id="widpwd"
+          class="form-control w-75 mx-auto mt-2"
+          type="password"
+          placeholder="Enter password"
+        />
+        <button
+          onclick="withdraw()"
+          style="background-color: #ffd900"
+          class="btn w-50 mx-auto text-center mt-3 fw-bold"
+        >
+          Withdraw
+        </button>
+        <div id="widresult" class="text mx-auto my-auto fw-bold"></div>
+      </div>
+    </section>
+    <script>
+      const loggedInEmail = localStorage.getItem("loggedInUserEmail");
+      console.log(loggedInEmail);
+      acno = document.getElementById("acno");
+      uname = document.getElementById("uname");
+      acbal = document.getElementById("acbal");
+      mail = document.getElementById("mail");
+      const userData = JSON.parse(localStorage.getItem(loggedInEmail));
+      acno.textContent = `ACCOUNT NO : ${userData.acno}`;
+      uname.textContent = `USER NAME : ${userData.uname}`;
+      mail.innerHTML = `<p id="mail" class="text-center my-auto fw-semibold">E-MAIL : ${userData.email}<button onclick="edit()" class="btn-primary ml-2"><i class="fa-solid fa-pen fa-sm" style="color: #0062ff;"></i></button> </p>`;
+      acbal.innerHTML = `<p id="acbal" class="text-center my-auto fw-bold">ACCOUNT BALANCE : <span class="text text-success">${userData.balance}</span></p>`;
+      const userpassword = userData.password;
+
+      function deposit() {
+        const depamount = Number(document.getElementById("depamount").value);
+        const deppwd = document.getElementById("deppwd").value;
+        if (!depamount || !deppwd) {
+          const depresult = document.getElementById("depresult");
+          depresult.innerHTML = `<div id="depresult" class="text mx-auto my-auto fw-bold text-danger">Fill the fields</div>`;
+        } else if (depamount <= 0) {
+          const depresult = document.getElementById("depresult");
+          depresult.innerHTML = `<div id="depresult" class="text mx-auto my-auto fw-bold text-danger">Deposit can not be zero or less</div>`;
+        } else if (document.getElementById("deppwd").value === userpassword) {
+          const newBal = Number(userData.balance) + depamount;
+          console.log(newBal);
+          userData.balance = newBal;
+          localStorage.setItem(loggedInEmail, JSON.stringify(userData));
+          acbal.innerHTML = `<p id="acbal" class="text-center my-auto fw-bold">ACCOUNT BALANCE : <span class="text text-success">${userData.balance}</span></p>`;
+          const depresult = document.getElementById("depresult");
+          depresult.innerHTML = `<div id="depresult" class="text mx-auto my-auto fw-bold text-success">Deposit successful</div>`;
+
+          alert("Password Matches...Transferring Amount...");
+          console.log(typeof depamount);
+        } else {
+          const depresult = document.getElementById("depresult");
+          depresult.innerHTML = `<div id="depresult" class="text mx-auto my-auto fw-bold text-danger">Password is wrong</div>`;
+        }
+      }
+
+      function edit() {
+        let editedmail = prompt("Enter the new email");
+        userData.email = editedmail;
+        localStorage.setItem(loggedInEmail, JSON.stringify(userData));
+        mail.innerHTML = `<p id="mail" class="text-center my-auto fw-semibold">E-MAIL : ${userData.email}<button onclick="edit()" class="btn-primary ml-2"><i class="fa-solid fa-pen fa-sm" style="color: #0062ff;"></i></button> </p>`;
+        alert("Email Updated Successfully!");
+        console.log(userData.email);
+      }
+
+      function withdraw() {
+        const bal = Number(userData.balance);
+        console.log(bal);
+        const widamount = Number(document.getElementById("widamount").value);
+        const widpwd = document.getElementById("widpwd").value;
+        if (!widamount || !widpwd) {
+          const widresult = document.getElementById("widresult");
+          widresult.innerHTML = `<div id="widresult" class="text mx-auto my-auto fw-bold text-danger">Fill the fields</div>`;
+        } else if (widpwd != userpassword) {
+          const widresult = document.getElementById("widresult");
+          widresult.innerHTML = `<div id="widresult" class="text mx-auto my-auto fw-bold text-danger">Password is wrong</div>`;
+        } else if (widamount <= 0) {
+          const widresult = document.getElementById("widresult");
+          widresult.innerHTML = `<div id="widresult" class="text mx-auto my-auto fw-bold text-danger">Amount cannot be zero or less</div>`;
+        } else if (bal - widamount < 2000) {
+          const widresult = document.getElementById("widresult");
+          widresult.innerHTML = `<div id="widresult" class="text mx-auto my-auto fw-bold text-danger">Minimum account balance is 2000</div>`;
+        } else {
+          alert("Password Matches...Withdrawing Amount...");
+          const newbal = bal - widamount;
+          console.log(newbal);
+          userData.balance = newbal;
+          localStorage.setItem(loggedInEmail, JSON.stringify(userData));
+          acbal.innerHTML = `<p id="acbal" class="text-center my-auto fw-bold">ACCOUNT BALANCE : <span class="text text-success">${userData.balance}</span></p>`;
+          const widresult = document.getElementById("widresult");
+          widresult.innerHTML = `<div id="widresult" class="text mx-auto my-auto fw-bold text-success">Withdraw successful</div>`;
+        }
+      }
+      function logout() {
+        window.location.href = "./login.html";
+      }
+      function homepage() {
+        window.location.href = "./index.html";
+      }
+    </script>
+  </body>
+</html>
