@@ -250,11 +250,24 @@
 
       function edit() {
         let editedmail = prompt("Enter the new email");
-        userData.email = editedmail;
-        localStorage.setItem(loggedInEmail, JSON.stringify(userData));
-        mail.innerHTML = `<p id="mail" class="text-center my-auto fw-semibold">E-MAIL : ${userData.email}<button onclick="edit()" class="btn-primary ml-2"><i class="fa-solid fa-pen fa-sm" style="color: #0062ff;"></i></button> </p>`;
-        alert("Email Updated Successfully!");
-        console.log(userData.email);
+        if (editedmail) {
+          let confirmmail = confirm("Are you sure you want to continue?");
+          if (confirmmail) {
+            if (editedmail.includes(".com") && editedmail.includes("@")) {
+              userData.email = editedmail;
+              localStorage.setItem(loggedInEmail, JSON.stringify(userData));
+              mail.innerHTML = `<p id="mail" class="text-center my-auto fw-semibold">E-MAIL : ${userData.email}<button onclick="edit()" class="btn-primary ml-2"><i class="fa-solid fa-pen fa-sm" style="color: #0062ff;"></i></button> </p>`;
+              alert("Email Updated Successfully!");
+              console.log(userData.email);
+            } else {
+              alert("Enter a valid email");
+            }
+          } else {
+            alert("Email Updation Cancelled");
+          }
+        } else {
+          alert("No valid input");
+        }
       }
 
       function withdraw() {
